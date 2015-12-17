@@ -156,7 +156,7 @@ nav ul li:last-child a
 	border-bottom-width: thin;
 	border-color: #E1DEDD;
 	padding: 0px 12px;
-	padding-bottom: 24px;
+	
 	min-height: 200px;
 }
 
@@ -189,7 +189,7 @@ nav ul li:last-child a
 
 .event-item-list p
 {
-	margin-bottom: 10px;
+
 }
 
 .event-item-list img
@@ -202,6 +202,11 @@ nav ul li:last-child a
 .event-item-list .image
 {
 	height: 120px;
+}
+
+.clickable
+{
+	height: 220px;
 }
 
 .event-item

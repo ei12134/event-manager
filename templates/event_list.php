@@ -38,17 +38,20 @@ foreach($result as $event)
 		else
 		{
 			?>
-			<img class="visibility" src="../images/public.jpg" alt="Public event" title="Public event">
-			<?php } ?>
+			<a href='event_item.php?id=<?php echo $event['eventId'] ?>'>
 
-			<h3 title="<?php echo $eventType ?>"> <a href='event_item.php?id=<?php echo $event['eventId'] ?>'><?php echo $event['title'] ?> </a> </h3>
+				<div class="clickable">
+					<img class="visibility" src="../images/public.jpg" alt="Public event" title="Public event">
+					<?php } ?>
 
-			<img src="<?php echo $event['imageURL'] ?>" class="image" alt="<?php echo $event['title'] ?>">
-			<p class="date"> Event date: <?php echo $event['eventTime'] ?></p>
-			<p> <?php echo substr($event['description'], 0, 140) ?> ...</p>
-			<ul>
-				<li> <a href='event_item.php?id=<?php echo $event['eventId'] ?>'>see more</a></li>
-			</ul>
+					<h3 title="<?php echo $eventType ?>"> <?php echo $event['title'] ?> </h3>
+
+
+					<img src="<?php echo $event['imageURL'] ?>" class="image" alt="<?php echo $event['title'] ?>">
+					<p class="date"> Event date: <?php echo $event['eventTime'] ?></p>
+					<p> <?php echo substr($event['description'], 0, 140) ?> ...</p>
+				</div>
+			</a>
 		</div>
 		<?php
 	}
