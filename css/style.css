@@ -221,6 +221,11 @@ nav ul li:last-child a
 	min-height: 280px;
 }
 
+.event-item a
+{
+	outline-style: none;
+}
+
 .event-item h3
 {
 	font-weight: bold;
