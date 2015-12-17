@@ -9,7 +9,6 @@ if (count($result) == 0)
 <?php
 foreach($result as $event)
 {
-
 	switch ($event['typeId']) {
 		case 1:
 		$eventType = "Party";
@@ -27,24 +26,22 @@ foreach($result as $event)
 
 	?>
 	<div class="event-item-list">
-		
-		<?php 
-		if ($event['visibility'] == 0)
-		{ 
-			?>
-			<img class="visibility" src="../images/private.jpg" alt="Private event" title="Private event">
-			<?php 
-		}
-		else
-		{
-			?>
-			<a href='event_item.php?id=<?php echo $event['eventId'] ?>'>
-				<div class="clickable_event">
+		<a href='event_item.php?id=<?php echo $event['eventId'] ?>'>
+			<div class="clickable_event">
+				<?php 
+				if ($event['visibility'] == 0)
+				{ 
+					?>
+					<img class="visibility" src="../images/private.jpg" alt="Private event" title="Private event">
+					<?php 
+				}
+				else
+				{
+					?>
 					<img class="visibility" src="../images/public.jpg" alt="Public event" title="Public event">
 					<?php } ?>
 
 					<h3 title="<?php echo $eventType ?>"> <?php echo $event['title'] ?> </h3>
-
 
 					<img src="<?php echo $event['imageURL'] ?>" class="image" alt="<?php echo $event['title'] ?>">
 					<p class="date"> Event date: <?php echo $event['eventTime'] ?></p>
@@ -52,6 +49,7 @@ foreach($result as $event)
 				</div>
 			</a>
 		</div>
+
 		<?php
 	}
 	?>

@@ -12,7 +12,9 @@ if($_SERVER["HTTPS"] != "on")
 <head>
 	<title><?php echo $title?></title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' media='screen and (max-width: 799px)' href='../css/mobile.css' />
+	<link rel='stylesheet' media='screen and (min-width: 800px)' href='../css/desktop.css' />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../javascript/jquery/jquery-ui.min.css">
 	<script src="../javascript/jquery/jquery-1.11.3.min.js"></script>
