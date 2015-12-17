@@ -5,8 +5,6 @@ $(document).ready(function(){
 
 	$("#dialog-confirm").dialog({
 		resizable: false,
-		height: 250,
-		width: 500,
 		modal: true,
 		autoOpen: false,
 		buttons: {

@@ -21,5 +21,5 @@ $eventId = filter_var($_POST['eventId'], FILTER_SANITIZE_SPECIAL_CHARS);
 
 updateEvent($eventType, $visibility, $imageURL, $title, $description, $eventTime, $eventId);
 
-header ("Location: ../pages/event_item.php?id=" . $_POST['eventId']);
+header ("Location: ../pages/event_item.php?id=" . $_POST['eventId'] . "#content");
 ?>

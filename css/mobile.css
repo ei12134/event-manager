@@ -181,6 +181,11 @@ nav ul li a
 	height: 15em;
 }
 
+#dialog-confirm
+{
+	width: 50%;
+}
+
 .event-item
 {
 	border-bottom-style: solid;
@@ -314,7 +319,7 @@ nav ul li a
 
 h2
 {
-	padding: 36px;
+	padding: 1.2em;
 	text-align: center;
 }
 

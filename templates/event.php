@@ -40,7 +40,7 @@ include_once('../database/registrations.php');
 	<form action="../actions/action_delete_event.php" method="post"> 
 		<input type="hidden" name="eventId" value="<?=$event['eventId']?>">
 
-		<h3> <?php echo $event['title'] ?> - <?php echo $eventType ?> </h3>
+		<h3><?php echo $eventType ?> - <?php echo $event['title'] ?></h3>
 		<img src="<?php echo $event['imageURL'] ?>" class="image" alt="<?php echo $event['title'] ?>">
 
 		<div class="item-text">
@@ -55,7 +55,7 @@ include_once('../database/registrations.php');
 			<ul>
 				<li><a href="#comments">comments</a></li>
 				<?php if (isset($_SESSION['userId']) && $_SESSION['userId'] == $event['ownerId']) { ?>
-				<li><a href="edit_event.php?id=<?php echo $event['eventId'] ?>">edit</a></li>
+				<li><a href="edit_event.php?id=<?php echo $event['eventId'] ?>#content">edit</a></li>
 				<li><a href="" class="delete">delete</a></li>
 				<?php }
 				$_SESSION['eventId'] = $event['eventId'];

@@ -26,7 +26,7 @@ foreach($result as $event)
 
 	?>
 	<div class="event-item-list">
-		<a href='event_item.php?id=<?php echo $event['eventId'] ?>'>
+		<a href='event_item.php?id=<?php echo $event['eventId'] ?>#content'>
 			<div class="clickable_event">
 				<?php 
 				if ($event['visibility'] == 0)

@@ -33,7 +33,7 @@ if($_SERVER["HTTPS"] != "on")
 			<div class="right">
 				<div>
 					<form action="../actions/action_logout.php" method="post">
-						<a href="../pages/user_info.php" >Logged in as <?=$_SESSION['username']?></a>					
+						<a href="../pages/user_info.php#content" >Logged in as <?=$_SESSION['username']?></a>					
 						<input type="submit" value="Logout">
 					</form>
 				</div>
