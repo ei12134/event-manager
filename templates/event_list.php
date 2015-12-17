@@ -39,8 +39,7 @@ foreach($result as $event)
 		{
 			?>
 			<a href='event_item.php?id=<?php echo $event['eventId'] ?>'>
-
-				<div class="clickable">
+				<div class="clickable_event">
 					<img class="visibility" src="../images/public.jpg" alt="Public event" title="Public event">
 					<?php } ?>
 
